@@ -22,6 +22,7 @@
 ![ModuleOrderForm](https://github.com/user-attachments/assets/1904fa8c-ee35-4581-b585-b96b42b83ca9)
 ![InventoryForm](https://github.com/user-attachments/assets/35e2cbb7-dd67-43ef-83dd-767ac62aa3ff)
 ![DepartamentForm](https://github.com/user-attachments/assets/fb40a10d-79b6-4633-a018-cacee57c4128)
+
 ⚙️ Техническая реализация
 Язык: C# (.NET Framework)
 Интерфейс: Windows Forms
