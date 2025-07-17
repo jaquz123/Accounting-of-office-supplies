@@ -1,0 +1,228 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3FD11E5B-2BA1-4CDD-8572-E7B0164790CD}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>FINALBD</RootNamespace>
+    <AssemblyName>FINALBD</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data, Version=9.2.0.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\MySQL\MySQL Connector NET 9.2\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdminForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminForm.Designer.cs">
+      <DependentUpon>AdminForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Autorization.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Autorization.Designer.cs">
+      <DependentUpon>Autorization.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DepartamentForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DepartamentForm.Designer.cs">
+      <DependentUpon>DepartamentForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditModuleDepartament.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditModuleDepartament.Designer.cs">
+      <DependentUpon>EditModuleDepartament.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditProductForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditProductForm.Designer.cs">
+      <DependentUpon>EditProductForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InventoryForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InventoryForm.Designer.cs">
+      <DependentUpon>InventoryForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManagerPoZakupkam.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManagerPoZakupkam.Designer.cs">
+      <DependentUpon>ManagerPoZakupkam.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Module2AddPriceAndProductVendorsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Module2AddPriceAndProductVendorsForm.Designer.cs">
+      <DependentUpon>Module2AddPriceAndProductVendorsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Module2DepartamentForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Module2DepartamentForm.Designer.cs">
+      <DependentUpon>Module2DepartamentForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Module3OrderDepartament.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Module3OrderDepartament.Designer.cs">
+      <DependentUpon>Module3OrderDepartament.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModuleDepartmentForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModuleDepartmentForm.Designer.cs">
+      <DependentUpon>ModuleDepartmentForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModuleOrderForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModuleOrderForm.Designer.cs">
+      <DependentUpon>ModuleOrderForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModuleProductForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModuleProductForm.Designer.cs">
+      <DependentUpon>ModuleProductForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModuleVendorsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModuleVendorsForm.Designer.cs">
+      <DependentUpon>ModuleVendorsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProductForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProductForm.Designer.cs">
+      <DependentUpon>ProductForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="VendorsForms.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VendorsForms.Designer.cs">
+      <DependentUpon>VendorsForms.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AdminForm.resx">
+      <DependentUpon>AdminForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Autorization.resx">
+      <DependentUpon>Autorization.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DepartamentForm.resx">
+      <DependentUpon>DepartamentForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditModuleDepartament.resx">
+      <DependentUpon>EditModuleDepartament.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditProductForm.resx">
+      <DependentUpon>EditProductForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InventoryForm.resx">
+      <DependentUpon>InventoryForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Module2AddPriceAndProductVendorsForm.resx">
+      <DependentUpon>Module2AddPriceAndProductVendorsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Module2DepartamentForm.resx">
+      <DependentUpon>Module2DepartamentForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Module3OrderDepartament.resx">
+      <DependentUpon>Module3OrderDepartament.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuleDepartmentForm.resx">
+      <DependentUpon>ModuleDepartmentForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuleOrderForm.resx">
+      <DependentUpon>ModuleOrderForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuleProductForm.resx">
+      <DependentUpon>ModuleProductForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuleVendorsForm.resx">
+      <DependentUpon>ModuleVendorsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProductForm.resx">
+      <DependentUpon>ProductForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="VendorsForms.resx">
+      <DependentUpon>VendorsForms.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
